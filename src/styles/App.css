@@ -1,0 +1,56 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+.App canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.filter-panel {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  z-index: 4;
+}
+
+.filter-item {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+.filter-label {
+  margin-left: 5x;
+}
+
+.scale-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+#overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+  pointer-events: none; /* para que no interfiera con el evento de click del canvas de la escena */
+}
+
+.container video,
+.container canvas {
+  position: absolute;
+  top: 0px;
+  left: -700px;
+  z-index: 1;
+}
+
+.container {
+  position: relative;
+}
